@@ -1,5 +1,3 @@
-﻿# Django-Custom-User-Authentication-System
-
 # CustomAuth Blog System
 
 [![Python](https://img.shields.io/badge/Python-3.14-blue)](https://www.python.org/)
@@ -64,6 +62,7 @@ Run server:
 python manage.py runserver
 
 Visit http://127.0.0.1:8000/ in your browser
+
 
 
 
