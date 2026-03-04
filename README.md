@@ -4,7 +4,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.14-blue)](https://www.python.org/)
 [![Django](https://img.shields.io/badge/Django-6.0-green)](https://www.djangoproject.com/)
-[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+
 
 ## 🚀 Project Overview
 CustomAuth Blog System is a **Django web application** that combines a **custom authentication system** with a fully functional blog platform.  
@@ -64,6 +64,9 @@ Run server:
 python manage.py runserver
 
 Visit http://127.0.0.1:8000/ in your browser
+
+
+
 
 
 
