@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}All Blogs{% endblock %}
+
+{% block content %}
+<h1>All Blogs</h1>
+{% for blog in blogs %}
+    <h2><a href="{% url 'blog_detail' blog.slug %}">{{ blog.title }}</a></h2>
+    <p>by {{ blog.author.full_name }} on {{ blog.created_at|date:"M d, Y" }}</p>
+    <p>{{ blog.content|truncatewords:30 }}</p>
+    {% if user == blog.author %}
+        <a href="{% url 'blog_edit' blog.slug %}">Edit</a> |
+        <a href="{% url 'blog_delete' blog.slug %}">Delete</a>
+    {% endif %}
+    <hr>
+{% empty %}
+    <p>No blogs yet.</p>
+{% endfor %}
+{% endblock %}
